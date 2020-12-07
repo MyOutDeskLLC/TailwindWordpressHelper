@@ -1,0 +1,24 @@
+{
+  "name": "tailwind_lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "regex": "\\bclass\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+  "wrapperClass": "mod",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production node scripts/prepare.js && (postcss ./src/css/main.css | node scripts/finalize.js)"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "commander": "^6.2.0",
+    "cssnano": "^4.1.10",
+    "node-fetch": "^2.6.1",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "pretty": "^2.0.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
